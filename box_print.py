@@ -34,3 +34,9 @@ try:
     box_print('ZZ', 3, 3)    # Invalid: symbol is more than 1 character
 except Exception as err:
     print('An exception happened: ' + str(err))
+
+# Another test case for invalid input
+try:
+    box_print('ZZ', 3, 3)    # Invalid: symbol not a single character
+except Exception as err:
+    print('An exception happened: ' + str(err))
