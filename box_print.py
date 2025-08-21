@@ -15,3 +15,13 @@ def box_print(symbol, width, height):
     # Validate that the height is large enough to form a box
     if height <= 2:
         raise Exception('Height must be greater than 2.')
+
+     # Print the top border of the box
+    print(symbol * width)
+
+    # Print the middle rows of the box (borders + spaces inside)
+    for i in range(height - 2):
+        print(symbol + (' ' * (width - 2)) + symbol)
+
+    # Print the bottom border of the box
+    print(symbol * width)
